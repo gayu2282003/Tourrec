@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-container {
+    max-width: 400px;
+    margin: 50px;
+    padding: 50px;
+    border: 5px solid #ccc;
+    border-radius: 50px;
+    margin-top: 200px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.login-container form input {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.login-container form button {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    margin-left: 30px;
+}
+
+.login-container form button:hover {
+    background-color: #5ce67a;
+}
+
+.login-container p {
+    text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+    background:linear-gradient(rgba(104, 103, 103, 0.815),rgba(90, 89, 89, 0.781)),url(log.jpg);
+    background-size: cover;
+}
+  </style>
+</head>
+<body>  
+  <div class="centered">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p style="color: white;">Don't have an account? <a href="signup.html" style="text-decoration: none;color: white; font-size:20px;border: 1px solid black;">Sign up here</a></p>
+    </div>
+</div>
+</body>
+</html>

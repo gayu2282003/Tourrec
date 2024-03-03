@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signup-container {
+    max-width: 400px;
+    padding: 50px;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.signup-container h2 {
+    text-align: center;
+}
+
+.signup-container form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #121311;
+    color: rgb(253, 251, 251);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-container form button:hover {
+    background-color: #45a049;
+}
+
+.signup-container p {
+    text-align: center;
+    font-size: larger;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+    background:linear-gradient(rgba(104, 103, 103, 0.815),rgba(90, 89, 89, 0.781)),url(sign.jpg);
+    background-size: cover;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="centered">
+    <div class="signup-container">
+        <h2 style="color: white;font-size:35px;">Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p style="color: white;font-size: larger;">Already have an account? <a href="login.html" style="text-decoration: none;font-size:20px;color: white;border: 1px solid black;">Login here</a></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+      @keyframes fadeIn{
+    0%{
+      transform: scale(0) ;
+      opacity: 0;
+    }
+}
+  .home .W  .slide{
+        /* background: linear-gradient(rgb(235,235,235,0.8),rgb(0,0,0,0.8)),url(images/aboutbanner.jpeg); */
+        background: url("images/book.jpg");
+        text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 35rem;
+    }
+    .home .W  .slide .heading-title{
+        font-size: 8vw;
+    color: black;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 2px 1px lightslategray;
+    padding: 1rem 0;
+    /* animation-iteration-count: infinite; */
+    animation: fadeIn 2s linear backwards 1s;
+    animation-iteration-count: infinite;
+    padding-left: 35px;
+       }
+</style>
+</head>
+<body>
+    
+
+<section class="header">
+    <a href="index.php" class="logo">TOURREC</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="package.html">Package</a>
+        <a href="book.html">Book</a>
+        <a href="tourist booking/addtocard.html">Shop</a>
+    </nav>  
+      <div id="menu" class="fas fa-bars"></div>
+</section>
+
+<section class="home">
+    <div class="W">
+         <div class="slide">
+         <h1 class="heading-title">Booking</h1>
+               <!-- <div class="content">
+                    <span>Explore,Discover,Travel</span>
+                    <h3>ADVENTURE IS OUT THERE</h3>
+                    <a href="package.php" class="btn">Explore</a>
+               </div> -->
+         </div>
+    </div>
+</section>
+<section class="booking">
+    <h1 class="heading-title">Book and Enjoy!!</h1>
+    <form action="book-form.php" method="POST" class="book-form">
+        <div class="flex">
+            <div class="inputBox">
+                <span>Name:</span>
+                <input type="text" placeholder="enter your name" name="name">
+            </div>
+            <div class="inputBox">
+                <span>Email:</span>
+                <input type="email" placeholder="enter your email" name="email">
+            </div>
+            <div class="inputBox">
+                <span>phone:</span>
+                <input type="number" placeholder="enter your number" name="phone">
+            </div>
+            <div class="inputBox">
+                <span>Address:</span>
+                <input type="text" placeholder="enter your address" name="address">
+            </div>
+            <div class="inputBox">
+                <span>Place To Visit:</span>
+                <input type="text" placeholder="place you want to visit" name="location">
+            </div>
+            <div class="inputBox">
+                <span>Total Members:</span>
+                <input type="number" placeholder="enter total members" name="guests">
+            </div>
+            <div class="inputBox">
+                <span>Arrivals:</span>
+                <input type="date"  name="arrivals">
+            </div>
+            <div class="inputBox">
+                <span>Leaving:</span>
+                <input type="date"  name="leaving">
+            </div>
+        </div>
+        <!-- <input type="submit" value="submit" name="send" class="btn"> -->
+        <a href="book.html" class="btn">Submit</a>
+    </form>
+
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+       <h3>Quick links</h3>
+       <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+       <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+       <a href="package.html"><i class="fas fa-angle-right"></i>Package</a>
+       <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+        </div>
+        <div class="box">
+       <h3>Contact Info</h3>
+        <a href="#"><i class="fas fa-phone"></i>+123-456-9876</a>
+        <a href="#"><i class="fas fa-phone"></i>+987-908-4567</a>
+        <a href="#"><i class="fas  fa-envelope"></i>tourrec@12gmail.com</a>
+        <a href="#"><i class="fas  fa-map"></i>Coimbatore,India-678954</a>
+        </div>
+        <div class="box">
+       <h3>Follow Us On</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             .signup-container {
+    padding: 60px;
+    border: 5px solid white;
+    border-radius: 50px;
+    margin: 20px;
+    width:300px
+}
+
+.signup-container {
+    text-align: center;
+}
+
+.signup-container form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #080808;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.signup-container form button:hover {
+    background-color: #45a049;
+}
+
+.signup-container p {
+    text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+    background:linear-gradient(rgba(123, 124, 124, 0.849),rgba(119, 118, 118, 0.829)),url(book.jpg);
+    background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <div class="centered">
+    <div class="signup-container">
+        <h1 style="font-size: 40px;">Procced to Pay</h1>
+        <form>
+            <p style="color:white; font-size: 20px;">* Cash on delivery</p>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="District" required>
+            <input type="text" placeholder="Address" required>
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
